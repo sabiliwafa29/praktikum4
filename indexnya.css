@@ -1,0 +1,242 @@
+@font-face {
+    font-family: lilita;
+    src: url(LilitaOne-Regular.ttf);
+}
+body{
+    font: 1em/150% Arial, Helvetica, sans-serif;
+    background: #1A120B;
+}
+#header{
+    font-family: lilita;
+    color: #E5E5CB;
+    margin-left: 3%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+#header h1{
+    font-family: lilita;
+    font-size: 45px;
+}
+
+/* mulai navbar */
+#navbar {
+    background: #3C2A21; 
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+}
+#navbar ul{
+    padding-left: 1%;
+    width: 70%;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding-left: 3%;
+    float: left;
+}
+#navbar a{
+    color: #D5CEA3;
+    font-family: lilita;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* buat search bar */
+form{
+    float: right;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: right; */
+    margin-left: 75%;
+    /* width: 50%; */
+}
+label {
+    font-size: 1rem;
+    margin-right: 1%;
+}
+input[type="search"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+/* mulai sidebar */
+#content, #sidebar{
+    background: #D5CEA3;
+    border-radius: 10px;
+}
+#navbar, #sidebar{
+    margin-bottom: 2%;
+}
+/* #page{
+    padding: 5px;
+    width: 960px;
+    margin: 20px auto;
+} */
+
+#content{
+    width: 75%;
+    float: left;
+    margin-bottom: 5%;
+}
+#content h1{
+    font-family: lilita;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+#content h4{
+    padding-left: 4%;
+}
+#content a{
+    text-decoration: none;
+    color: #3C2A21;
+}
+#content .gambar{
+    text-align: center;
+}
+#content img{
+    width: 88%;
+    border-radius: 10px;
+}
+#content p{
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 70%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.video-container iframe {
+    position: absolute;
+    height: 70%;
+    width: 88%;
+    border-radius: 10px;
+}
+#sidebar{
+    width: 300px;
+    float: right;
+}
+#sidebar h1{
+    padding-top: 3%;
+    padding-left: 10%;
+    font-family: lilita;
+}
+#sidebar ul{
+    list-style: none;
+    /* padding-left: 0; */
+}
+#sidebar li{
+    padding-bottom: 5%;
+}
+#sidebar a{
+    text-decoration: none;
+    color: black;
+}
+#header form{
+    display: none;
+}
+
+@media screen and (max-width: 1353px) {
+    /* #pagewrap{
+        width: 94%;
+    } */
+    #content{
+        width: 72%;
+        font-size: 100%;
+    }
+    #sidebar{
+        width: 25%;
+    }
+    #header form{
+        display: none;
+    }
+    #navbar form{
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    /* #pagewrap{
+        width: 94%;
+    } */
+    #content{
+        width: 72%;
+        font-size: 90%;
+    }
+    #sidebar{
+        width: 25%;
+    }
+    #header form{
+        display: none;
+    }
+    #navbar form{
+        margin-left: 80%;
+        
+    }
+}
+@media screen and (max-width: 1000px) {
+    /* #pagewrap{
+        width: 94%;
+    } */
+    #content{
+        width: 72%;
+        font-size: 90%;
+    }
+    #sidebar{
+        width: 25%;
+    }
+    #header form{
+        display: none;
+    }
+    #navbar form{
+        margin-left: 75%;
+        
+    }
+}
+@media screen and (max-width: 700px) {
+    #content{
+        width: auto;
+        font-size: auto;
+    }
+    #sidebar{
+        width: auto;
+        float: none;
+        clear: both;
+    }
+    #header form{
+        display: none;
+    }
+    #navbar form{
+        margin-left: 65%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar{
+        width: 100%;
+    }
+    h1{
+        font-size: auto;
+    }
+    #sidebar{
+        clear: both;
+    }
+    form{
+        position: absolute;
+        display: none;
+    }
+    #navbar li{
+        padding-left: 4%;
+    }
+    #header form{
+        display: flex;
+        margin-left: 60%;
+        width: 30%;
+    }
+}
+
