@@ -22,7 +22,7 @@ body{
 
 /* mulai navbar */
 #navbar {
-    background: #3C2A21; 
+    background: linear-gradient(to right,#3C2A21,#755c4f);
     border-radius: 10px; 
     display: flex;
     align-items: center;
@@ -47,10 +47,7 @@ body{
 form{
     float: right;
     position: absolute;
-    /* justify-content: center; */
-    /* align-items: right; */
     margin-left: 75%;
-    /* width: 50%; */
 }
 label {
     font-size: 1rem;
@@ -72,11 +69,6 @@ input[type="search"] {
 #navbar, #sidebar{
     margin-bottom: 2%;
 }
-/* #page{
-    padding: 5px;
-    width: 960px;
-    margin: 20px auto;
-} */
 
 #content{
     width: 75%;
@@ -137,16 +129,13 @@ input[type="search"] {
 }
 #sidebar a{
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 #header form{
     display: none;
 }
 
 @media screen and (max-width: 1353px) {
-    /* #pagewrap{
-        width: 94%;
-    } */
     #content{
         width: 72%;
         font-size: 100%;
@@ -162,9 +151,6 @@ input[type="search"] {
     }
 }
 @media screen and (max-width: 1280px) {
-    /* #pagewrap{
-        width: 94%;
-    } */
     #content{
         width: 72%;
         font-size: 90%;
@@ -177,13 +163,9 @@ input[type="search"] {
     }
     #navbar form{
         margin-left: 80%;
-        
     }
 }
 @media screen and (max-width: 1000px) {
-    /* #pagewrap{
-        width: 94%;
-    } */
     #content{
         width: 72%;
         font-size: 90%;
@@ -196,7 +178,6 @@ input[type="search"] {
     }
     #navbar form{
         margin-left: 75%;
-        
     }
 }
 @media screen and (max-width: 700px) {
@@ -240,4 +221,3 @@ input[type="search"] {
         width: 30%;
     }
 }
-
